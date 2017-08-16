@@ -102,4 +102,5 @@ public class NewTest {
 		System.out.println(separacion.size());
 		AssertJUnit.assertEquals(expected, separacion.get(0));
 	}
+	//parser y extender comandos a potencia logaritmo e a la x y parentesis de acuerdo a la matriz de operadores
 }
