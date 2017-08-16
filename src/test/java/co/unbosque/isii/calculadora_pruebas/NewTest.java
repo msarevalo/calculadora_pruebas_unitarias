@@ -93,7 +93,7 @@ public class NewTest {
 	@Test
 	public void laSeparacionDeOperadoresExiste() throws ComandoNoEncontradoException {
 		//Comando comando;
-		String cadena = "10-5-2+1+1*1/5";
+		String cadena = "1-5-2+1+1*1/5";
 		ArrayList<String> separacion = SepararSignos.separacionSignos(cadena);
 		String expected = "-";
 		for(int i = 0; i<separacion.size();i++) {
