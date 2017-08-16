@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64" started-at="2017-08-16T01:41:23Z" finished-at="2017-08-16T01:41:24Z">
+  <suite name="Default suite" duration-ms="52" started-at="2017-08-16T01:58:56Z" finished-at="2017-08-16T01:58:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64" started-at="2017-08-16T01:41:23Z" finished-at="2017-08-16T01:41:24Z">
+    <test name="Default test" duration-ms="52" started-at="2017-08-16T01:58:56Z" finished-at="2017-08-16T01:58:56Z">
       <class name="co.unbosque.isii.calculadora_pruebas.NewTest">
-        <test-method status="PASS" signature="debeDividirCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeDividirCorrectamente" duration-ms="12" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="debeDividirCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeDividirCorrectamente" duration-ms="8" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- debeDividirCorrectamente -->
-        <test-method status="PASS" signature="debeMultiplicarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeMultiplicarCorrectamente" duration-ms="1" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="debeMultiplicarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeMultiplicarCorrectamente" duration-ms="2" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- debeMultiplicarCorrectamente -->
-        <test-method status="PASS" signature="debeRestarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeRestarCorrectamente" duration-ms="0" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="debeRestarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeRestarCorrectamente" duration-ms="1" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- debeRestarCorrectamente -->
-        <test-method status="PASS" signature="debeSumarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeSumarCorrectamente" duration-ms="0" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="debeSumarCorrectamente()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="debeSumarCorrectamente" duration-ms="1" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- debeSumarCorrectamente -->
-        <test-method status="PASS" signature="laOperacionDivisionExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionDivisionExiste" duration-ms="1" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="laOperacionDivisionExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionDivisionExiste" duration-ms="1" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- laOperacionDivisionExiste -->
-        <test-method status="PASS" signature="laOperacionMultiplicacionExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionMultiplicacionExiste" duration-ms="0" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="laOperacionMultiplicacionExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionMultiplicacionExiste" duration-ms="1" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- laOperacionMultiplicacionExiste -->
-        <test-method status="PASS" signature="laOperacionRestaExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionRestaExiste" duration-ms="1" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="laOperacionRestaExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionRestaExiste" duration-ms="0" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- laOperacionRestaExiste -->
-        <test-method status="PASS" signature="laOperacionSumaExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionSumaExiste" duration-ms="1" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="laOperacionSumaExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laOperacionSumaExiste" duration-ms="1" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- laOperacionSumaExiste -->
-        <test-method status="PASS" signature="laSeparacionDeNumerosExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laSeparacionDeNumerosExiste" duration-ms="2" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="PASS" signature="laSeparacionDeNumerosExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laSeparacionDeNumerosExiste" duration-ms="2" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- laSeparacionDeNumerosExiste -->
-        <test-method status="FAIL" signature="laSeparacionDeOperadoresExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laSeparacionDeOperadoresExiste" duration-ms="2" started-at="2017-08-15T20:41:24Z" finished-at="2017-08-15T20:41:24Z">
+        <test-method status="FAIL" signature="laSeparacionDeOperadoresExiste()[pri:0, instance:co.unbosque.isii.calculadora_pruebas.NewTest@6d78f375]" name="laSeparacionDeOperadoresExiste" duration-ms="2" started-at="2017-08-15T20:58:56Z" finished-at="2017-08-15T20:58:56Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<-> but was:<>]]>
