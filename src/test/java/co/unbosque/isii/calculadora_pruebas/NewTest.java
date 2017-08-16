@@ -22,7 +22,7 @@ public class NewTest {
 	public void noDebeEncontrarOperacionPotencia() throws ComandoNoEncontradoException {
 		omando operacion = EncontrarComando.cmd("^"); 
 	}*/
-	
+	//test_github
 	@Test
 	public void laOperacionSumaExiste() throws ComandoNoEncontradoException {
 		EncontrarComando.addOp(new Suma());
