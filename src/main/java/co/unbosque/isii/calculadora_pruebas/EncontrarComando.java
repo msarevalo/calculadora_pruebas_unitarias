@@ -21,6 +21,7 @@ public class EncontrarComando {
 		operaciones.put("-", c);
 		operaciones.put("*", c);
 		operaciones.put("/", c);
+		operaciones.put("cos", c);
 	}
 
 }

@@ -106,8 +106,18 @@ public class NewTest {
 	@Test
 	public void laOperacionCoseno() throws ComandoNoEncontradoException {
 		EncontrarComando.addOp(new Coseno());
-		Comando operacion = EncontrarComando.cmd("Cos");
+		Comando operacion = EncontrarComando.cmd("cos");
 		AssertJUnit.assertTrue(operacion instanceof Coseno);
 	}
-	//parser y extender comandos a potencia logaritmo e a la x y parentesis de acuerdo a la matriz de operadores
+	
+	@Test
+ 	public void debeSacarCosenoCorrectamente() throws ComandoNoEncontradoException {
+		EncontrarComando.addOp(new Coseno());
+		Comando operacion = EncontrarComando.cmd("cos");
+		//Operaciones op = new Operaciones();
+		double resultado = operacion.ejecutarOperacion(10, 90);
+		double experado = 0;
+		AssertJUnit.assertEquals(resultado, experado);
+	}
+	
 }

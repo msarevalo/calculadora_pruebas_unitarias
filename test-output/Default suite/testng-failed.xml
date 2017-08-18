@@ -5,8 +5,7 @@
     <classes>
       <class name="co.unbosque.isii.calculadora_pruebas.NewTest">
         <methods>
-          <include name="laOperacionCoseno"/>
-          <include name="laSeparacionDeOperadoresExiste"/>
+          <include name="debeSacarCosenoCorrectamente"/>
         </methods>
       </class> <!-- co.unbosque.isii.calculadora_pruebas.NewTest -->
     </classes>

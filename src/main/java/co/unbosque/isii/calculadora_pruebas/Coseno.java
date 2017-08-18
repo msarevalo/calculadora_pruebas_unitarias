@@ -2,9 +2,9 @@ package co.unbosque.isii.calculadora_pruebas;
 
 public class Coseno implements Comando {
 
-	public double ejecutarOperacion(double d, int i) {
+	public double ejecutarOperacion(double d, double i) {
 		// TODO Auto-generated method stub
-		return 0;
+		return Math.cos(d);
 	}
 
 	public String separar(String cadena) {

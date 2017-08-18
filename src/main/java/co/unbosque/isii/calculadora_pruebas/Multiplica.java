@@ -7,7 +7,7 @@ public class Multiplica implements Comando {
 		return resultado;
 	}*/
 
-	public double ejecutarOperacion(double a, int b) {
+	public double ejecutarOperacion(double a, double b) {
 		// TODO Auto-generated method stub
 		//return this.multiplica(a, b);
 		return a * b;
