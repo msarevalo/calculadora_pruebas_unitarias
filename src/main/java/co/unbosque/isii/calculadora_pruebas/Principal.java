@@ -13,10 +13,12 @@ public class Principal {
 		System.out.println("Escriba la operacion");
 		teclado.nextLine();
 		
-		SepararNumeros.separacionNumeros(cadena);
-		SepararSignos.separacionSignos(cadena);
+		//SepararNumeros.separacionNumeros(cadena);
+		//SepararSignos.separacionSignos(cadena);
 		
-		
+		PilasSignos.pilas(cadena);
+		//Comando c = 
+		//System.out.println();
 		
 	}
 
