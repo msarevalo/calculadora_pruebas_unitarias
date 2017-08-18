@@ -96,11 +96,18 @@ public class NewTest {
 		String cadena = "1-5-2+1+1*1/5";
 		ArrayList<String> separacion = SepararSignos.separacionSignos(cadena);
 		String expected = "-";
-		for(int i = 0; i<separacion.size();i++) {
+		/*for(int i = 0; i<separacion.size();i++) {
 			System.out.println(separacion.get(i));
 		}
-		System.out.println(separacion.size());
+		System.out.println(separacion.size());*/
 		AssertJUnit.assertEquals(expected, separacion.get(0));
+	}
+	
+	@Test
+	public void laOperacionCoseno() throws ComandoNoEncontradoException {
+		EncontrarComando.addOp(new Coseno());
+		Comando operacion = EncontrarComando.cmd("Cos");
+		AssertJUnit.assertTrue(operacion instanceof Coseno);
 	}
 	//parser y extender comandos a potencia logaritmo e a la x y parentesis de acuerdo a la matriz de operadores
 }
