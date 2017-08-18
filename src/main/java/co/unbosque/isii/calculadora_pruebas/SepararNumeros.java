@@ -2,7 +2,7 @@ package co.unbosque.isii.calculadora_pruebas;
 
 import java.util.ArrayList;
 
-public class SepararNumeros {
+public class SepararNumeros implements Comando{
 
 	public static ArrayList<Double> separacionNumeros(String cadena) {
 		// TODO Auto-generated method stub
@@ -15,4 +15,16 @@ public class SepararNumeros {
 		}
 		return numeros2;
 	}
+
+	public double ejecutarOperacion(double d, double i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String separar(String cadena) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 }
