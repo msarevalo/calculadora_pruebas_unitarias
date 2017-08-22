@@ -1,16 +1,18 @@
 package co.unbosque.isii.calculadora_pruebas;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 //import java.util.Map;
 
 public class MatrizPrioridad {
-
-
+	
 	public static int matriz() {
-
-		Llaves key = new Llaves();
-		HashMap<Llaves, Integer> prueba = new HashMap<Llaves, Integer>();
-		prueba.put(key, 1);
+		ArrayList<Contenido> matriz = new ArrayList<Contenido>();
+		Contenido cont;
+		
+		matriz.add(cont);
+		
 		
 		//prueba
 		

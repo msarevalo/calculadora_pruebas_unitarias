@@ -4,6 +4,6 @@ public interface Comando {
 
 	double ejecutarOperacion(double d, double i);
 
-	String separar(String cadena);
+	//String separar(String cadena);
 
 }
