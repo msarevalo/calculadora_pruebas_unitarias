@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 //import java.util.Map;
+import java.util.Scanner;
 
 import javax.swing.RowFilter.Entry;
 
@@ -95,5 +96,6 @@ public class MatrizPrioridad {
 		System.out.println(matrizResta('-'));
 		System.out.println(matrizMultiplica('+'));
 		System.out.println(matrizDivide('+'));
+		
 	}
 }
