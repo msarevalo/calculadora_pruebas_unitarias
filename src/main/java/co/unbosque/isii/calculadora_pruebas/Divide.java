@@ -16,11 +16,11 @@ public class Divide implements Comando {
 		// TODO Auto-generated method stub
 		//return this.divide(a, b);
 		double resultado;
-		if(a >= b) {
+		//if(a >= b) {
 			resultado = a / b;
-		}else {
-			resultado = b / a;
-		}
+		//}else {
+			//resultado = b / a;
+		//}
 		return resultado;
 	}
 
