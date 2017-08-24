@@ -104,20 +104,20 @@ public class MatrizPrioridad {
 		Integer respuesta = null;
 		if(signo.equals('+')) {
 			respuesta = matrizSuma(obten);
-			EncontrarComando.addOp(new Suma());
+			//EncontrarComando.addOp(new Suma());
 			//System.out.println(matrizSuma(obten));
 		}else {
 			if(signo.equals('-')) {
 				respuesta = matrizResta(obten);
-				EncontrarComando.addOp(new Resta());
+				//EncontrarComando.addOp(new Resta());
 			}else {
 				if(signo.equals('*')) {
 					respuesta = matrizMultiplica(obten);
-					EncontrarComando.addOp(new Multiplica());
+					//EncontrarComando.addOp(new Multiplica());
 				}else {
 					if(signo.equals('/')) {
 						respuesta = matrizDivide(obten);
-						EncontrarComando.addOp(new Divide());
+						//EncontrarComando.addOp(new Divide());
 					}else {
 						if(signo.equals('p')) {
 							respuesta = 1;
@@ -126,6 +126,11 @@ public class MatrizPrioridad {
 				}
 			}
 		}
+		/*if(respuesta == 1) {
+			ActivarComando.activar(obten);
+		}else {
+			ActivarComando.activar(signo);
+		}*/
 		
 		return respuesta;
 		//return matriz.get(obten);
