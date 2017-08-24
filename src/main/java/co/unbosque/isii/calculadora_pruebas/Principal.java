@@ -16,7 +16,7 @@ public class Principal {
 		//SepararNumeros.separacionNumeros(cadena);
 		//SepararSignos.separacionSignos(cadena);
 		
-		PilasSignos.pilas(cadena);
+		//PilasSignos.pilas(cadena);
 		//Comando c = 
 		//System.out.println();
 		

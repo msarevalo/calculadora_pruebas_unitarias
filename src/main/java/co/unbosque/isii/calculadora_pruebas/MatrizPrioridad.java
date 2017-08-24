@@ -91,11 +91,43 @@ public class MatrizPrioridad {
 		return resultado;		
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		System.out.println(matrizSuma('/'));
 		System.out.println(matrizResta('-'));
 		System.out.println(matrizMultiplica('+'));
 		System.out.println(matrizDivide('+'));
 		
+	}*/
+	
+	public Integer matrizPrincipal(Character signo, Character obten) {
+		//HashMap<Character, Integer> matriz = new HashMap<Character, Integer>();
+		Integer respuesta = null;
+		if(signo.equals('+')) {
+			respuesta = matrizSuma(obten);
+			EncontrarComando.addOp(new Suma());
+			//System.out.println(matrizSuma(obten));
+		}else {
+			if(signo.equals('-')) {
+				respuesta = matrizResta(obten);
+				EncontrarComando.addOp(new Resta());
+			}else {
+				if(signo.equals('*')) {
+					respuesta = matrizMultiplica(obten);
+					EncontrarComando.addOp(new Multiplica());
+				}else {
+					if(signo.equals('/')) {
+						respuesta = matrizDivide(obten);
+						EncontrarComando.addOp(new Divide());
+					}else {
+						if(signo.equals('p')) {
+							respuesta = 1;
+						}
+					}
+				}
+			}
+		}
+		
+		return respuesta;
+		//return matriz.get(obten);
 	}
 }

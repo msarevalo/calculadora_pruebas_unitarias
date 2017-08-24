@@ -1,4 +1,4 @@
-package co.unbosque.isii.calculadora_pruebas;
+/*package co.unbosque.isii.calculadora_pruebas;
 
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public class NewTest {
 	/*@Test(expectedExceptions=ComandoNoEncontradoException.class)
 	public void noDebeEncontrarOperacionPotencia() throws ComandoNoEncontradoException {
 		omando operacion = EncontrarComando.cmd("^"); 
-	}*/
+	}
 	
 	@Test
 	public void laOperacionSumaExiste() throws ComandoNoEncontradoException {
@@ -99,7 +99,7 @@ public class NewTest {
 		/*for(int i = 0; i<separacion.size();i++) {
 			System.out.println(separacion.get(i));
 		}
-		System.out.println(separacion.size());*/
+		System.out.println(separacion.size());
 		AssertJUnit.assertEquals(expected, separacion.get(0));
 	}
 	
@@ -120,4 +120,4 @@ public class NewTest {
 		AssertJUnit.assertEquals(resultado, experado);
 	}
 	
-}
+}*/
