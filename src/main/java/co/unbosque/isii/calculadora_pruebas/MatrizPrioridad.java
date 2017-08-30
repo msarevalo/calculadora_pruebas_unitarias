@@ -52,7 +52,7 @@ public class MatrizPrioridad {
 	public static Integer matrizResta(Character obten) {
 		HashMap< Character, Integer> resta = new HashMap<Character, Integer>();
 		
-		resta.put('+', 0);
+		resta.put('+', 1);
 		resta.put('-', 1);
 		resta.put('*', 0);
 		resta.put('/', 0);
@@ -82,7 +82,7 @@ public class MatrizPrioridad {
 		
 		deivide.put('+', 1);
 		deivide.put('-', 1);
-		deivide.put('*', 0);
+		deivide.put('*', 1);
 		deivide.put('/', 1);
 		Integer resultado = null;
 				

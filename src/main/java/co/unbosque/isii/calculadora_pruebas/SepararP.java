@@ -39,6 +39,7 @@ public class SepararP {
 						pilaS.getSignos().push(digito);
 					}
 				}
+				//System.out.println(temporal);
 				temporal = 0;
 			}
 			
@@ -65,11 +66,11 @@ public class SepararP {
 				double numero1 = pilaN.getNumeros().pop();
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
-				//System.out.println(numero3 + " " + numero2);
+				//System.out.println(numero2 + " " + numero3);
 				double resultado = operacion.ejecutarOperacion(numero3, numero2);
 				//System.out.println(resultado);
-				pilaN.getNumeros().push(resultado);
 				pilaN.getNumeros().push(numero1);
+				pilaN.getNumeros().push(resultado);
 				pilaS.getSignos().push(signo1);
 			}else {
 				//System.out.println("Pasa2");
@@ -78,11 +79,11 @@ public class SepararP {
 				double numero1 = pilaN.getNumeros().pop();
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
-				//System.out.println(numero3 + " " + numero2);
+				//System.out.println(numero1 + " " + numero2);
 				double resultado = operacion.ejecutarOperacion(numero2, numero1);
 				//System.out.println(resultado);
-				pilaN.getNumeros().push(resultado);
 				pilaN.getNumeros().push(numero3);
+				pilaN.getNumeros().push(resultado);
 				pilaS.getSignos().push(signo2);
 			}
 		}
@@ -93,8 +94,9 @@ public class SepararP {
 		double numero1 = pilaN.getNumeros().pop();
 		double numero2 = pilaN.getNumeros().pop();
 		//double numero3 = pilaN.getNumeros().pop();
-		System.out.println(numero2 + " " + numero1);
-		double resultado = operacion.ejecutarOperacion(numero2, numero1);
+		//System.out.println(ultimo);
+		//System.out.println(numero1 + " " + numero2);
+		double resultado = operacion.ejecutarOperacion(numero1, numero2);
 		//System.out.println(resultado);
 		//pilaN.getNumeros().push(resultado);
 		
