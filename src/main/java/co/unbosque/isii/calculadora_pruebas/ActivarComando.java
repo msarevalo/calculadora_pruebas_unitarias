@@ -18,6 +18,11 @@ public class ActivarComando {
 					if(signo.equals('/')) {
 						//System.out.println("Divide");
 						EncontrarComando.addOp(new Divide());
+					}else {
+						if (signo.equals('^')) {
+							//System.out.println("Potencia");
+							EncontrarComando.addOp(new Potencia());
+						}
 					}
 				}
 			}

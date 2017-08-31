@@ -23,6 +23,7 @@ public class EncontrarComando {
 		operaciones.put('*', c);
 		operaciones.put('/', c);
 		operaciones.put('c', c);
+		operaciones.put('^', c);
 	}
 
 }

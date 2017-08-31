@@ -17,7 +17,7 @@ public class Principal {
 
 		System.out.println("Escriba EXIT para salir");
 		while (respuesta == 0) {
-			try {
+			//try {
 				//contador=1;
 				System.out.println("Escriba la operacion a realizar");
 				cadena = teclado.nextLine();
@@ -33,10 +33,10 @@ public class Principal {
 						
 					}
 				}
-			} catch (Exception e) {
-				switch (contador) {
-				case 1:
-					System.out.println("Ooops!!! algo ha sucedido, intenta de nuevo");
+			//} catch (Exception e) {
+				//switch (contador) {
+				/*case 1:
+					/System.out.println("Ooops!!! algo ha sucedido, intenta de nuevo");
 					contador++;
 					break;
 
@@ -54,11 +54,10 @@ public class Principal {
 					break;
 				default:
 					break;
-				}
+				}*/
 				
 			}
-		}
-
+		
 		teclado.close();
 
 	}

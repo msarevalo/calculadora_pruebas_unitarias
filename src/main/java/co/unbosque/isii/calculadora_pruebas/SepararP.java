@@ -13,12 +13,13 @@ public class SepararP {
 				
 		for(int i=0; i<cadena.length();i++) {
 			digito = cadena.charAt(i);
-			if(!digito.equals('+') && !digito.equals('-') && !digito.equals('*') && !digito.equals('/')) {
+			if(!digito.equals('+') && !digito.equals('-') && !digito.equals('*') && !digito.equals('/') && !digito.equals('^')) {
 				temporal = (temporal*10) + Double.parseDouble(""+digito);
 				pilaN.getNumeros().push(temporal);
 			}else {
 				if(pilaS.getSignos().isEmpty()) {
 					pilaS.getSignos().push(digito);
+					//System.out.println(digito);
 				}else {
 					variable = pilaS.getSignos().pop();
 					int respuesta = mat.matrizPrincipal(variable, digito);
@@ -29,12 +30,15 @@ public class SepararP {
 						Comando operacion = EncontrarComando.cmd(variable);
 						double numero1 = pilaN.getNumeros().pop();
 						double numero2 = pilaN.getNumeros().pop();
+						//System.out.println(variable);
+						System.out.println(numero2 + " " + variable + " " + numero1);
 						double resultado = operacion.ejecutarOperacion(numero2, numero1);
-						//System.out.println(resultado);
+						System.out.println(resultado);
 						pilaN.getNumeros().push(resultado);
 						pilaS.getSignos().push(digito);
 					}else {
 						//System.out.println("No Pasa");
+						//System.out.println(digito);
 						pilaS.getSignos().push(variable);
 						pilaS.getSignos().push(digito);
 					}
@@ -66,11 +70,12 @@ public class SepararP {
 				double numero1 = pilaN.getNumeros().pop();
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
-				//System.out.println(numero2 + " " + numero3);
+				//System.out.println(signo2);
+				System.out.println(numero3 + " " + signo2 + " " + numero2);
 				double resultado = operacion.ejecutarOperacion(numero3, numero2);
-				//System.out.println(resultado);
-				pilaN.getNumeros().push(numero1);
+				System.out.println(resultado);
 				pilaN.getNumeros().push(resultado);
+				pilaN.getNumeros().push(numero1);
 				pilaS.getSignos().push(signo1);
 			}else {
 				//System.out.println("Pasa2");
@@ -79,7 +84,8 @@ public class SepararP {
 				double numero1 = pilaN.getNumeros().pop();
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
-				//System.out.println(numero1 + " " + numero2);
+				//System.out.println(signo1);
+				System.out.println(numero2 + " " +  signo1 + " " + numero1);
 				double resultado = operacion.ejecutarOperacion(numero2, numero1);
 				//System.out.println(resultado);
 				pilaN.getNumeros().push(numero3);
@@ -95,8 +101,8 @@ public class SepararP {
 		double numero2 = pilaN.getNumeros().pop();
 		//double numero3 = pilaN.getNumeros().pop();
 		//System.out.println(ultimo);
-		//System.out.println(numero1 + " " + numero2);
-		double resultado = operacion.ejecutarOperacion(numero1, numero2);
+		System.out.println(numero2 + " " + ultimo + " " + numero1);
+		double resultado = operacion.ejecutarOperacion(numero2, numero1);
 		//System.out.println(resultado);
 		//pilaN.getNumeros().push(resultado);
 		
