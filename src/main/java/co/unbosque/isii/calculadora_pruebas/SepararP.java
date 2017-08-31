@@ -1,5 +1,7 @@
 package co.unbosque.isii.calculadora_pruebas;
 
+import org.yaml.snakeyaml.external.com.google.gdata.util.common.base.PercentEscaper;
+
 public class SepararP {
 
 	public static double separacion(String cadena) throws ComandoNoEncontradoException {
@@ -10,13 +12,45 @@ public class SepararP {
 		Character digito;
 		Character variable = null;
 		double temporal = 0;
-				
-		for(int i=0; i<cadena.length();i++) {
+		int largo = cadena.length();
+		int aux = 0;
+		int aux2 = 0;
+		int contador = 0;
+		String cadena2;
+		Character digito2;
+		double parentesis = 0.0;
+		
+		for(int i=0; i<largo;i++) {
 			digito = cadena.charAt(i);
-			if(!digito.equals('+') && !digito.equals('-') && !digito.equals('*') && !digito.equals('/') && !digito.equals('^')) {
+			if(!digito.equals('+') && !digito.equals('-') && !digito.equals('*') && !digito.equals('/') && !digito.equals('^') && !digito.equals('(') && !digito.equals(')')) {
 				temporal = (temporal*10) + Double.parseDouble(""+digito);
 				pilaN.getNumeros().push(temporal);
 			}else {
+				if(digito.equals('(')) {
+					cadena2 = "";
+					aux = 1;
+					aux2 = 0;
+					contador = i+1;
+					while(aux != aux2) {
+						digito2 = cadena.charAt(contador);
+						if(!digito2.equals(')')) {
+							if(digito2.equals('(')) {
+								aux++;
+								contador++;
+							}else {
+								cadena2 = cadena2 + digito2;
+								contador++;
+							}
+						}else {
+							aux2++;
+							i = contador+1;
+						}
+					}
+					System.out.println(cadena2);
+					parentesis = SepararP.separacion(cadena2);
+					System.out.println(parentesis);
+					pilaN.getNumeros().push(parentesis);
+				}
 				if(pilaS.getSignos().isEmpty()) {
 					pilaS.getSignos().push(digito);
 					//System.out.println(digito);
@@ -31,7 +65,7 @@ public class SepararP {
 						double numero1 = pilaN.getNumeros().pop();
 						double numero2 = pilaN.getNumeros().pop();
 						//System.out.println(variable);
-						System.out.println(numero2 + " " + variable + " " + numero1);
+						//System.out.println(numero2 + " " + variable + " " + numero1);
 						double resultado = operacion.ejecutarOperacion(numero2, numero1);
 						System.out.println(resultado);
 						pilaN.getNumeros().push(resultado);
@@ -71,7 +105,7 @@ public class SepararP {
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
 				//System.out.println(signo2);
-				System.out.println(numero3 + " " + signo2 + " " + numero2);
+				//System.out.println(numero3 + " " + signo2 + " " + numero2);
 				double resultado = operacion.ejecutarOperacion(numero3, numero2);
 				System.out.println(resultado);
 				pilaN.getNumeros().push(resultado);
@@ -85,7 +119,7 @@ public class SepararP {
 				double numero2 = pilaN.getNumeros().pop();
 				double numero3 = pilaN.getNumeros().pop();
 				//System.out.println(signo1);
-				System.out.println(numero2 + " " +  signo1 + " " + numero1);
+				//System.out.println(numero2 + " " +  signo1 + " " + numero1);
 				double resultado = operacion.ejecutarOperacion(numero2, numero1);
 				//System.out.println(resultado);
 				pilaN.getNumeros().push(numero3);
@@ -100,8 +134,8 @@ public class SepararP {
 		double numero1 = pilaN.getNumeros().pop();
 		double numero2 = pilaN.getNumeros().pop();
 		//double numero3 = pilaN.getNumeros().pop();
-		//System.out.println(ultimo);
-		System.out.println(numero2 + " " + ultimo + " " + numero1);
+		System.out.println(ultimo);
+		//System.out.println(numero2 + " " + ultimo + " " + numero1);
 		double resultado = operacion.ejecutarOperacion(numero2, numero1);
 		//System.out.println(resultado);
 		//pilaN.getNumeros().push(resultado);
